@@ -1,9 +1,11 @@
 name: Python Checks
 on:
   pull_request:
+    paths-ignore: ['백준/**']
   push:
     branches:
       - master
+    paths-ignore: ['백준/**']
   workflow_dispatch:
 jobs:
   lint:
